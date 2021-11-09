@@ -239,13 +239,16 @@ header .links div.menu-bar.active .bar-bot {
   border: none;
   font-size: 0.9em;
   outline: none;
-  color: var(--text-clr);
-  font-weight: 600;
 }
 .sec-one .sec-con .left-con .btn-con button:hover {
   box-shadow: inset 3px 3px 7px var(--dark-clr),
     inset -3px -3px 7px var(--light-clr);
   text-shadow: 3px 3px 2px var(--dark-clr), -3px -3px 7px var(--light-clr);
+}
+.sec-one .sec-con .left-con .btn-con button a {
+  text-decoration: none;
+  color: var(--text-clr);
+  font-weight: 600;
 }
 .sec-one .sec-con .right-con {
   width: 50%;
@@ -742,29 +745,61 @@ section.bar-anim .jump3 {
   width: 105%;
   padding: 1.5em 2em;
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(3, 1fr);
+  justify-items: center;
   margin-top: 2em;
+}
+.sec-three .sec-con .sec-con-2 .con-bar:hover {
+  color: var(--light-clr);
 }
 .sec-three .sec-con .sec-con-2 .con-bar {
   width: 80%;
-  min-width: 220px;
-  max-width: 275px;
-  height: 300px;
+  min-width: 300px;
+  max-width: 400px;
+  height: auto;
   border-radius: 30px;
-  padding: 1em 3em;
+  padding: 1.5em 2em 2em;
   position: relative;
+  color: var(--text-clr);
+  padding-bottom: 1em;
+}
+.sec-three .sec-con .sec-con-2 .con-bar .con-title h2 {
+  text-align: center;
+}
+.sec-three .sec-con .sec-con-2 .con-bar .con-sign {
+  text-align: right;
+  font-weight: 600;
+  font-style: italic;
+}
+.sec-three .sec-con .sec-con-2 .con-bar .con-para {
+  font-size: 13px;
+  text-align: center;
+  letter-spacing: 0.5px;
+  font-style: italic;
+}
+.sec-three .sec-con .sec-con-2 .con-bar .con-img {
+  width: 122px;
+  height: 122px;
+  margin: 0.5em auto;
+  border-radius: 50%;
+  background-size: cover;
+  background-color: var(--back-clr);
+  background-blend-mode: luminosity;
+}
+.sec-three .sec-con .sec-con-2 .con-bar:hover .con-img {
+  background-blend-mode: normal;
+}
+.sec-three .sec-con .sec-con-2 .con-bar:first-child .con-img {
+  background-image: url(/numorpism/images/avatar-1.jpg);
+}
+.sec-three .sec-con .sec-con-2 .con-bar:nth-child(2) .con-img {
+  background-image: url(/numorpism/images/avatar-2.jpg);
+}
+.sec-three .sec-con .sec-con-2 .con-bar:last-child .con-img {
+  background-image: url(/numorpism/images/avatar-3.jpg);
 }
 .sec-three .sec-con .sec-con-2 .con-bar .con-title {
   height: 3em;
-}
-.sec-three .sec-con .sec-con-2 .con-bar .con-title h2 {
-  color: var(--text-clr);
-  text-align: center;
-}
-.sec-three .sec-con .sec-con-2 .con-bar .con-data {
-  width: 100%;
-  height: 80%;
-  z-index: 3;
 }
 .sec-three .sec-con .sec-con-2 .con-bar::after {
   width: 80%;
@@ -784,29 +819,6 @@ section.bar-anim .jump3 {
   height: 100%;
   width: 100%;
 }
-.sec-three .sec-con .sec-con-2 .con-bar:hover .con-data ul li,
-.sec-three .sec-con .sec-con-2 .con-bar:hover .con-title h2 {
-  color: var(--light-clr);
-}
-.sec-three .sec-con .sec-con-2 .con-bar .con-data ul {
-  width: 100%;
-  height: 100%;
-}
-.sec-three .sec-con .sec-con-2 .con-bar .con-data ul li {
-  list-style: none;
-  color: var(--text-clr);
-  margin-top: 0.7em;
-  background-size: 22px;
-  background-position-y: 3px;
-  text-align: center;
-}
-::marker {
-  font-size: 2.5em;
-  line-height: 0;
-  padding-top: 0.5em;
-  text-align: center;
-}
-
 .sec-four {
   width: 100%;
   position: relative;
@@ -1097,14 +1109,10 @@ section.bar-anim .jump3 {
     top: 0;
     border-radius: 30px;
     backdrop-filter: blur(4px);
-    /* background-color: var(--back-clr); */
-    /* border-top: 1px solid #fff;
-    border-left: 1px solid #fff; */
     box-shadow: 3px 3px 7px var(--dark-clr), -3px -3px 7px var(--light-clr);
     margin-top: 6em;
     left: 0px;
     transform: translateX(12.5%);
-    /* display: none; */
     width: 0vw;
     transition: all 0.5s cubic-bezier(1, 1.57, 0, 0.85);
     overflow: hidden;
@@ -1142,6 +1150,9 @@ section.bar-anim .jump3 {
     grid-template-columns: repeat(2, 1fr);
     justify-items: center;
     grid-gap: 2em;
+  }
+  .sec-three .sec-con .sec-con-2 .con-bar:last-child {
+    grid-column: 1/3;
   }
   .sec-con-1 .tab2,
   .sec-con-1 .tab1,
@@ -1209,14 +1220,17 @@ section.bar-anim .jump3 {
   .sec-con-1 .tab2 {
     margin-bottom: 3em;
   }
-}
-@media (max-width: 670px) {
   .sec-three .sec-con .sec-con-2 {
     display: grid;
     grid-template-columns: 1fr;
     justify-items: center;
     grid-gap: 2em;
   }
+  .sec-three .sec-con .sec-con-2 .con-bar:last-child {
+    grid-column: 1/2;
+  }
+}
+@media (max-width: 670px) {
   .sec-con-1 .tab1 .text-con,
   .sec-con-1 .tab2 .text-con,
   .sec-con-1 .tab3 .text-con {
