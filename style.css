@@ -790,13 +790,13 @@ section.bar-anim .jump3 {
   background-blend-mode: normal;
 }
 .sec-three .sec-con .sec-con-2 .con-bar:first-child .con-img {
-  background-image: url(/numorpism/images/avatar-1.jpg);
+  background-image: url(/images/avatar-1.jpg);
 }
 .sec-three .sec-con .sec-con-2 .con-bar:nth-child(2) .con-img {
-  background-image: url(/numorpism/images/avatar-2.jpg);
+  background-image: url(/images/avatar-2.jpg);
 }
 .sec-three .sec-con .sec-con-2 .con-bar:last-child .con-img {
-  background-image: url(/numorpism/images/avatar-3.jpg);
+  background-image: url(/images/avatar-3.jpg);
 }
 .sec-three .sec-con .sec-con-2 .con-bar .con-title {
   height: 3em;
