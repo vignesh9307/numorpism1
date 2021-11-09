@@ -1426,6 +1426,9 @@ section.bar-anim .jump3 {
   .footer .sec-con .tool-sec {
     grid-template-columns: 1fr;
   }
+  .footer .sec-con {
+    padding: 0 0em 1em;
+  }
   .footer .sec-con .tool-sec .tool-con {
     width: 80%;
   }
