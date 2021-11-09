@@ -792,9 +792,11 @@ section.bar-anim .jump3 {
   background-size: cover;
   background-color: var(--back-clr);
   background-blend-mode: luminosity;
+  transition: all 0.5s cubic-bezier(1, 1.57, 0, 0.85);
 }
 .sec-three .sec-con .sec-con-2 .con-bar:hover .con-img {
   background-blend-mode: normal;
+  transform: scale(1.1);
 }
 .sec-three .sec-con .sec-con-2 .con-bar:first-child .con-img {
   background-image: url(https://i.pinimg.com/564x/b6/94/c6/b694c6589d613f3721d300961e975ac8.jpg);
