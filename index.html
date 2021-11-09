@@ -10,6 +10,11 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      crossorigin="anonymous"
+    />
     <title>Numorpism</title>
   </head>
   <body>
@@ -281,16 +286,16 @@
               </div>
               <div class="cont-links">
                 <div class="lynks">
-                  <i class="fa fa-twitch" aria-hidden="true"></i>
+                  <i class="fab fa-facebook-f"></i>
                 </div>
                 <div class="lynks">
-                  <i class="fa fa-steam-square" aria-hidden="true"></i>
+                  <i class="fab fa-instagram"></i>
                 </div>
                 <div class="lynks">
-                  <i class="fa fa-reddit" aria-hidden="true"></i>
+                  <i class="fab fa-twitter"></i>
                 </div>
                 <div class="lynks">
-                  <i class="fa fa-pinterest" aria-hidden="true"></i>
+                  <i class="fab fa-pinterest-p"></i>
                 </div>
               </div>
             </div>
@@ -380,7 +385,61 @@
         </div>
       </div>
     </section>
-    <section class="footer"></section>
+    <section class="footer">
+      <div class="sec-con">
+        <div class="sec-title">
+          <div class="title">
+            <h2 class="title-top3">Tool Applications</h2>
+          </div>
+        </div>
+        <div class="tool-sec">
+          <div class="tool-con">
+            <div class="tool-title"><h3>Designer Tools</h3></div>
+            <div class="ttol-det">
+              <ul>
+                <li>Illustrator</li>
+                <li>Figma</li>
+                <li>Photoshop</li>
+                <li>Indesign</li>
+              </ul>
+            </div>
+          </div>
+          <div class="tool-con">
+            <div class="tool-title"><h3>Ui Developer Tools</h3></div>
+            <div class="ttol-det">
+              <ul>
+                <li>Html5</li>
+                <li>Css3</li>
+                <li>Bootstrap</li>
+              </ul>
+            </div>
+          </div>
+          <div class="tool-con">
+            <div class="tool-title"><h3>Front-End Tools</h3></div>
+            <div class="ttol-det">
+              <ul>
+                <li>Angular</li>
+                <li>React</li>
+                <li>Vue</li>
+                <li>Jquery</li>
+                <li>Javascript</li>
+              </ul>
+            </div>
+          </div>
+          <div class="tool-con">
+            <div class="tool-title"><h3>Back-End Tools</h3></div>
+            <div class="ttol-det">
+              <ul>
+                <li>Php</li>
+                <li>Java</li>
+                <li>Python</li>
+                <li>Ruby</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
     <section class="foot-line">
       <h5>zootopians@zoomper.com since 1899 pvt ltd</h5>
     </section>
@@ -471,6 +530,7 @@
       let parabott = document.querySelector(".para-bottom1");
       let titletoppp = document.querySelector(".title-top2");
       let parabottt = document.querySelector(".para-bottom2");
+      let titletopppp = document.querySelector(".title-top3");
       window.onscroll = function () {
         // desktop size
         if (body.offsetWidth > 500) {
@@ -504,7 +564,7 @@
           }
           if (
             document.documentElement.scrollTop > 3000 &&
-            document.documentElement.scrollTop < 3800
+            document.documentElement.scrollTop < 3700
           ) {
             titletoppp.style.transform = "translateY(0px)";
             titletoppp.style.opacity = "1";
@@ -515,6 +575,16 @@
             titletoppp.style.opacity = "0";
             parabottt.style.transform = "translateY(30px)";
             parabottt.style.opacity = "0";
+          }
+          if (
+            document.documentElement.scrollTop > 3900 &&
+            document.documentElement.scrollTop < 4450
+          ) {
+            titletopppp.style.transform = "translateY(0px)";
+            titletopppp.style.opacity = "1";
+          } else {
+            titletopppp.style.transform = "translateY(-30px)";
+            titletopppp.style.opacity = "0";
           }
         } else {
           // mobile size
@@ -559,6 +629,16 @@
             titletoppp.style.opacity = "0";
             parabottt.style.transform = "translateY(30px)";
             parabottt.style.opacity = "0";
+          }
+          if (
+            document.documentElement.scrollTop > 6600 &&
+            document.documentElement.scrollTop < 7200
+          ) {
+            titletopppp.style.transform = "translateY(0px)";
+            titletopppp.style.opacity = "1";
+          } else {
+            titletopppp.style.transform = "translateY(-30px)";
+            titletopppp.style.opacity = "0";
           }
         }
       };
