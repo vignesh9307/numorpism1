@@ -772,11 +772,16 @@ section.bar-anim .jump3 {
 .sec-three .sec-con .sec-con-2 .con-bar:hover .con-title h2 {
   background-image: linear-gradient(170deg, var(--back-clr), var(--dark-clr));
 }
+.sec-three .sec-con .sec-con-2 .con-bar:hover .con-sign {
+  font-size: 1em;
+}
 .sec-three .sec-con .sec-con-2 .con-bar .con-sign {
   text-align: right;
   font-weight: 600;
   margin-top: 0.5em;
   font-style: italic;
+  font-size: 0.8em;
+  transition: all 0.5s cubic-bezier(1, 1.57, 0, 0.85);
 }
 .sec-three .sec-con .sec-con-2 .con-bar .con-para {
   font-size: 13px;
@@ -793,10 +798,12 @@ section.bar-anim .jump3 {
   background-color: var(--back-clr);
   background-blend-mode: luminosity;
   transition: all 0.5s cubic-bezier(1, 1.57, 0, 0.85);
+  opacity: 0.8;
 }
 .sec-three .sec-con .sec-con-2 .con-bar:hover .con-img {
   background-blend-mode: normal;
   transform: scale(1.1);
+  opacity: 1;
 }
 .sec-three .sec-con .sec-con-2 .con-bar:first-child .con-img {
   background-image: url(https://i.pinimg.com/564x/b6/94/c6/b694c6589d613f3721d300961e975ac8.jpg);
@@ -1110,7 +1117,25 @@ section.bar-anim .jump3 {
   opacity: 0;
   transform: translateY(-30px);
 }
-
+.footer .sec-con .tool-sec {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 1em;
+  justify-items: center;
+}
+.footer .sec-con .tool-sec .tool-con {
+  width: 200px;
+  color: var(--text-clr);
+}
+.footer .sec-con .tool-sec .tool-con .tool-title h3 {
+  font-weight: 600;
+  margin-bottom: 0.5em;
+}
+.footer .sec-con .tool-sec .tool-con .tool-det ul li {
+  list-style: none;
+  padding-left: 5px;
+}
 .foot-line {
   width: 100%;
   height: 60px;
@@ -1118,6 +1143,7 @@ section.bar-anim .jump3 {
   background-color: var(--text-clr);
   display: flex;
   align-items: center;
+  font-size: 0.8em;
   justify-content: center;
   color: var(--back-clr);
   border-radius: 0 0 30px 30px;
@@ -1241,6 +1267,12 @@ section.bar-anim .jump3 {
   header .links .togler,
   header .links div.menu-bar {
     width: 2.3em;
+  }
+}
+@media (max-width: 970px) {
+  .footer .sec-con .tool-sec {
+    grid-template-columns: repeat(2, 1fr);
+    grid-row-gap: 2em;
   }
 }
 @media (max-width: 768px) {
@@ -1390,6 +1422,13 @@ section.bar-anim .jump3 {
   header .links div.menu-bar.active .bar-bot,
   header .links div.menu-bar.active .bar-top {
     left: 20%;
+  }
+  .footer .sec-con .tool-sec {
+    grid-template-columns: 1fr;
+  }
+  .foot-line {
+    font-size: 0.7em;
+    height: 50px;
   }
 }
 /* short class */
