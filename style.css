@@ -808,15 +808,15 @@ section.bar-anim .jump3 {
   opacity: 1;
 }
 .sec-three .sec-con .sec-con-2 .con-bar:first-child .con-img {
-  background-image: url(/numorpism/images/review-img-1.webp);
+  background-image: url(/images/review-img-1.webp);
 }
 .sec-three .sec-con .sec-con-2 .con-bar:nth-child(2) .con-img {
   background-position: 0 -2em;
-  background-image: url(/numorpism/images/review-img-3.webp);
+  background-image: url(/images/review-img-3.webp);
 }
 .sec-three .sec-con .sec-con-2 .con-bar:last-child .con-img {
   background-position: 0 -0.5em;
-  background-image: url(/numorpism/images/review-img-2.webp);
+  background-image: url(/images/review-img-2.webp);
 }
 .sec-three .sec-con .sec-con-2 .con-bar .con-title {
   height: 3em;
