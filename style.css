@@ -46,6 +46,7 @@ body.light {
   --img-dark: url("skull-dark.svg");
 }
 body {
+  /* scroll-padding: 100px; */
   background-color: var(--back-clr);
   overflow-x: hidden;
   width: 100vw;
@@ -198,7 +199,7 @@ header .links div.menu-bar.active .bar-bot {
   height: 100vh;
   display: flex;
   align-items: center;
-  overflow-x: hidden;
+  overflow: hidden;
   justify-content: center;
 }
 .sec-one .sec-con {
@@ -207,6 +208,7 @@ header .links div.menu-bar.active .bar-bot {
   padding: 1em 2em;
   display: flex;
   align-items: center;
+  perspective: 100em;
 }
 .sec-one .sec-con .left-con {
   padding-top: 5em;
@@ -215,6 +217,8 @@ header .links div.menu-bar.active .bar-bot {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
+  transform: rotatey(40deg);
+  transform-style: preserve-3d;
 }
 .sec-one .sec-con .left-con .title-con h1 {
   font-size: 3em;
@@ -258,6 +262,8 @@ header .links div.menu-bar.active .bar-bot {
   display: flex;
   align-items: center;
   justify-content: center;
+  transform: rotateY(-40deg);
+  transform-style: preserve-3d;
 }
 .sec-one .sec-con .right-con .img-con {
   background-color: var(--back-clr);
@@ -271,7 +277,7 @@ header .links div.menu-bar.active .bar-bot {
   overflow: hidden;
   position: relative;
   transition: all 0.5s ease-in-out;
-  transform: translateX(100px);
+  transform: translateX(300px);
   opacity: 0;
 }
 .sec-one .sec-con .right-con .img-con:hover {
