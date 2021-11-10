@@ -1118,6 +1118,7 @@ section.bar-anim .jump3 {
   font-size: 2em;
   position: relative;
   opacity: 0;
+  width: fit-content;
   transform: translateY(-30px);
 }
 .footer .sec-con .tool-sec {
@@ -1131,9 +1132,34 @@ section.bar-anim .jump3 {
   width: 200px;
   color: var(--text-clr);
 }
+.footer .sec-con .tool-sec .tool-con .tool-title {
+  perspective: 10em;
+}
+.footer .sec-con .tool-sec .tool-con:hover .tool-title h3 {
+  animation: rotator 1s linear;
+}
 .footer .sec-con .tool-sec .tool-con .tool-title h3 {
   font-weight: 600;
   margin-bottom: 0.5em;
+  width: fit-content;
+  transform-style: preserve-3d;
+}
+@keyframes rotator {
+  0% {
+    transform: scale(1) rotateY(0deg);
+  }
+  20% {
+    transform: scale(1.2) rotateY(90deg);
+  }
+  50% {
+    transform: scale(1.5) rotateY(180deg);
+  }
+  70% {
+    transform: scale(1.2) rotateY(90deg);
+  }
+  100% {
+    transform: scale(1) rotateY(0deg);
+  }
 }
 .footer .sec-con .tool-sec .tool-con .tool-det ul li {
   list-style: none;
