@@ -46,7 +46,6 @@ body.light {
   --img-dark: url("skull-dark.svg");
 }
 body {
-  /* scroll-padding: 100px; */
   background-color: var(--back-clr);
   overflow-x: hidden;
   width: 100vw;
@@ -1231,7 +1230,7 @@ section.bar-anim .jump3 {
   }
   header .links .fixed-pop.active {
     display: flex;
-    width: 70vw;
+    width: 80vw;
     visibility: visible;
     pointer-events: visible;
   }
@@ -1311,6 +1310,7 @@ section.bar-anim .jump3 {
   .sec-one .sec-con .left-con {
     padding-top: 7em;
     width: 100%;
+    transform: rotateY(30deg);
   }
   .para-con {
     margin: 2em 0;
@@ -1376,6 +1376,9 @@ section.bar-anim .jump3 {
   }
 }
 @media (max-width: 450px) {
+  html {
+    scroll-padding-top: 20px;
+  }
   .sec-three .sec-con,
   .sec-two .sec-con {
     padding: 1em 0;
