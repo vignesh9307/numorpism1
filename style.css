@@ -53,8 +53,6 @@ body {
 }
 header {
   position: fixed;
-  /* left: 50%;
-  transform: translateX(-50%); */
   width: 90vw;
   margin-top: -15vh;
   margin-left: 5vw;
@@ -289,7 +287,6 @@ header .links div.menu-bar.active .bar-bot {
 
 section.bar-anim {
   margin: 0 auto;
-
   width: 90%;
   background-color: var(--back-clr);
   height: 2em;
