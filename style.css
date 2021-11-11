@@ -790,6 +790,7 @@ section.bar-anim .jump3 {
   text-align: center;
   letter-spacing: 0.5px;
   font-style: italic;
+  position: relative;
 }
 .sec-three .sec-con .sec-con-2 .con-bar .con-img {
   width: 122px;
