@@ -18,6 +18,9 @@
     <title>Numorpism</title>
   </head>
   <body>
+    <div class="topd">
+      <a href="#home" class="topa"><i class="fas fa-chevron-circle-up"></i></a>
+    </div>
     <header class="shadow-in header-fade">
       <div class="logo-con">
         <div class="logo">
@@ -531,7 +534,14 @@
       let titletoppp = document.querySelector(".title-top2");
       let parabottt = document.querySelector(".para-bottom2");
       let titletopppp = document.querySelector(".title-top3");
+      let atop = document.querySelector(".topd");
       window.onscroll = function () {
+        // home toggle
+        if (document.documentElement.scrollTop < 700) {
+          atop.style.opacity = "0";
+        } else {
+          atop.style.opacity = "1";
+        }
         // desktop size
         if (body.offsetWidth > 500) {
           if (
@@ -669,6 +679,15 @@
           }
         }
       });
+
+      // hover effects
+      showcontent.onmousemove = function (e) {
+        var y = e.pageY - showcontent.offsetTop;
+        var x = e.pageX - showcontent.offsetLeft;
+
+        showcontent.style.setProperty("--y", y + "px");
+        showcontent.style.setProperty("--x", x + "px");
+      };
     </script>
   </body>
 </html>

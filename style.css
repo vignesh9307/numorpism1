@@ -56,7 +56,7 @@ body {
 header {
   position: fixed;
   width: 90vw;
-  margin-top: -15vh;
+  margin-top: -150px;
   margin-left: 5vw;
   background-color: var(--back-clr);
   height: 5em;
@@ -193,14 +193,29 @@ header .links div.menu-bar.active .bar-bot {
   padding: 0.49em 0em;
   font-family: "FontAwesome";
 }
+.topd {
+  z-index: 10;
+  opacity: 0;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  transition: opacity 0.2s cubic-bezier(1, 1.57, 0, 0.85);
+}
+.topa {
+  font-size: 2em;
+  color: var(--text-clr);
+  text-decoration: none;
+  text-shadow: 3px 3px 2px var(--dark-clr), -3px -3px 7px var(--light-clr);
+}
 .sec-one {
   position: relative;
   width: 100%;
-  height: 100vh;
+  height: auto;
   display: flex;
   align-items: center;
   overflow: hidden;
   justify-content: center;
+  padding: 2em 0;
 }
 .sec-one .sec-con {
   width: 90%;
@@ -1220,7 +1235,7 @@ section.bar-anim .jump3 {
     flex-direction: column;
     padding: 5em 0;
     justify-content: space-evenly;
-    height: 70vh;
+    height: 75%;
     top: 0;
     border-radius: 30px;
     backdrop-filter: blur(4px);
@@ -1234,12 +1249,23 @@ section.bar-anim .jump3 {
     visibility: hidden;
     pointer-events: none;
   }
+  header .links .fixed-pop.active::before {
+    content: "";
+    position: absolute;
+    top: var(--y);
+    left: var(--x);
+    background-color: #5f5f5f;
+    transform: translate(-50%, -50%);
+    width: 50px;
+    height: 50px;
+  }
   header .links .fixed-pop.active {
     display: flex;
-    width: 80vw;
+    width: 80%;
     visibility: visible;
     pointer-events: visible;
   }
+
   .overlay {
     width: 100vw;
     height: 100vh;
