@@ -230,11 +230,23 @@ header .links div.menu-bar.active .bar-bot {
 }
 .topa {
   font-size: 3em;
-  color: var(--text-clr);
   text-decoration: none;
   text-shadow: 3px 3px 2px var(--dark-clr);
 }
 .topa i {
+  color: var(--text-clr);
+  background-image: linear-gradient(
+    to top,
+    silver,
+    var(--text-clr),
+    silver,
+    var(--text-clr),
+    silver,
+    var(--text-clr),
+    silver
+  );
+  -webkit-background-clip: text;
+  color: transparent;
   margin-top: 10px;
 }
 .sec-one {
