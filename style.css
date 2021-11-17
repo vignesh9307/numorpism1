@@ -93,6 +93,7 @@ header {
   justify-content: space-between;
   padding: 0 60px 0 40px;
   z-index: 10;
+  transition: 1s;
 }
 header .logo-con {
   width: 100px;
@@ -225,13 +226,13 @@ header .links div.menu-bar.active .bar-bot {
   position: fixed;
   bottom: 30px;
   right: 20px;
-  transition: opacity 0.2s cubic-bezier(1, 1.57, 0, 0.85);
+  transition: all 0.8s cubic-bezier(1, 1.57, 0, 0.85);
 }
 .topa {
-  font-size: 2em;
+  font-size: 3em;
   color: var(--text-clr);
   text-decoration: none;
-  text-shadow: 3px 3px 2px var(--dark-clr), -3px -3px 7px var(--light-clr);
+  text-shadow: 3px 3px 2px var(--dark-clr);
 }
 .topa i {
   margin-top: 10px;
@@ -1275,14 +1276,7 @@ section.bar-anim .jump3 {
   header .links .fixed-pop li {
     margin-left: 0;
   }
-  header .links .fixed-pop.con-til li {
-    perspective: 1000px;
-    transform-style: preserve-3d;
-    transform: translateZ(100px);
-  }
-  /* header .links .fixed-pop.con-til li a {
-    transform: translateZ(100px);
-  } */
+
   header .links .fixed-pop {
     position: fixed;
     flex-direction: column;
@@ -1297,13 +1291,11 @@ section.bar-anim .jump3 {
     left: 0px;
     width: 0vw;
     transition: all 0.5s cubic-bezier(1, 1.57, 0, 0.85);
-    /* overflow: hidden; */
+    overflow: hidden;
     visibility: hidden;
     pointer-events: none;
   }
-  header .links .fixed-pop.con-til {
-    transform-style: preserve-3d;
-  }
+
   header .links .fixed-pop.active {
     display: flex;
     width: 80%;
@@ -1553,4 +1545,15 @@ section.bar-anim .jump3 {
 .shadow-in {
   box-shadow: inset 3px 3px 7px var(--dark-clr),
     inset -3px -3px 7px var(--light-clr);
+}
+@keyframes alli {
+  0% {
+    transform: rotateZ(-90deg) translateX(-80px);
+  }
+  1% {
+    transform: rotateZ(-90deg) translateX(0px);
+  }
+  100% {
+    transform: rotateZ(-90deg) translateX(80px);
+  }
 }
