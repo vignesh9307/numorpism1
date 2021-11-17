@@ -248,9 +248,11 @@ header .links div.menu-bar.active .bar-bot {
   transform: translateX(-100px);
   opacity: 0;
 }
-.sec-one .sec-con .left-con .btn-con button {
+.btn-tran {
   transform: translateX(-100px);
   opacity: 0;
+}
+.sec-one .sec-con .left-con .btn-con button {
   background-color: var(--back-clr);
   margin-top: 1em;
   padding: 1.2em 2.5em;
@@ -784,8 +786,16 @@ section.bar-anim .jump3 {
   position: relative;
   color: var(--text-clr);
   padding-bottom: 1em;
-  overflow: hidden;
+  transform-style: preserve-3d;
 }
+.js-tilt-glare {
+  border-radius: 30px;
+}
+.sec-three .sec-con .sec-con-2 .con-bar .con-title {
+  transform: translateZ(40px);
+  height: 3em;
+}
+
 .sec-three .sec-con .sec-con-2 .con-bar .con-title h2 {
   text-align: center;
   background-image: linear-gradient(120deg, var(--text-clr), var(--light-clr));
@@ -805,6 +815,7 @@ section.bar-anim .jump3 {
   font-style: italic;
   font-size: 0.8em;
   transition: all 0.5s cubic-bezier(1, 1.57, 0, 0.85);
+  transform: translateZ(40px);
 }
 .sec-three .sec-con .sec-con-2 .con-bar .con-para {
   font-size: 13px;
@@ -812,6 +823,7 @@ section.bar-anim .jump3 {
   letter-spacing: 0.5px;
   font-style: italic;
   position: relative;
+  transform: translateZ(30px);
 }
 .sec-three .sec-con .sec-con-2 .con-bar .con-img {
   width: 122px;
@@ -823,10 +835,11 @@ section.bar-anim .jump3 {
   background-blend-mode: luminosity;
   transition: all 0.5s cubic-bezier(1, 1.57, 0, 0.85);
   opacity: 0.8;
+  transform: translateZ(60px);
 }
 .sec-three .sec-con .sec-con-2 .con-bar:hover .con-img {
   background-blend-mode: normal;
-  transform: scale(1.1);
+  transform: scale(1.1) translateZ(50px);
   opacity: 1;
 }
 .sec-three .sec-con .sec-con-2 .con-bar:first-child .con-img {
@@ -839,9 +852,6 @@ section.bar-anim .jump3 {
 .sec-three .sec-con .sec-con-2 .con-bar:last-child .con-img {
   background-position: 0 -0.5em;
   background-image: url(./images/review-img-2.webp);
-}
-.sec-three .sec-con .sec-con-2 .con-bar .con-title {
-  height: 3em;
 }
 .sec-three .sec-con .sec-con-2 .con-bar::after {
   width: 80%;
