@@ -4,31 +4,21 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
     <link rel="shortcut icon" href="favicon.svg" type="image/svg" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
-      crossorigin="anonymous"
-    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="./fonts/style.css" />
     <title>Numorpism</title>
   </head>
   <body>
     <div class="topd">
       <a href="#home" class="topa"
-        ><i class="fa fa-arrow-up" aria-hidden="true"></i
+        ><i class="icon-fighter-jet" aria-hidden="true"></i
       ></a>
     </div>
     <header class="shadow-in header-fade">
       <div class="logo-con">
         <div class="logo">
-          <a href="#home"
-            ><span class="iconify" data-icon="raphael:skull"></span
-          ></a>
+          <a href="#home"><span class="icon-skull"></span></a>
         </div>
       </div>
       <div class="links">
@@ -264,43 +254,41 @@
               <div class="cont-add">
                 <ul>
                   <li>
-                    <span
-                      ><i class="fa fa-building" aria-hidden="true"></i
-                    ></span>
+                    <span><i class="icon-office" aria-hidden="true"></i></span>
                     <p>Zootopia Pvt Ltd</p>
                   </li>
                   <li>
                     <span
-                      ><i class="fa fa-map-marker" aria-hidden="true"></i
+                      ><i class="icon-location" aria-hidden="true"></i
                     ></span>
                     <p>
                       #45 cross zootopian, zootopian zity, sopprlompia-52622
                     </p>
                   </li>
                   <li>
-                    <span
-                      ><i class="fa fa-envelope" aria-hidden="true"></i
-                    ></span>
+                    <span><i class="icon-send" aria-hidden="true"></i></span>
                     <p>zootopianmp@zomper.com</p>
                   </li>
                   <li>
-                    <span><i class="fa fa-phone" aria-hidden="true"></i></span>
+                    <span
+                      ><i class="icon-local_phone" aria-hidden="true"></i
+                    ></span>
                     <p>+1 909 235 839</p>
                   </li>
                 </ul>
               </div>
               <div class="cont-links">
                 <div class="lynks">
-                  <i class="fab fa-facebook-f"></i>
+                  <i class="icon-facebook1"></i>
                 </div>
                 <div class="lynks">
-                  <i class="fab fa-instagram"></i>
+                  <i class="icon-instagram"></i>
                 </div>
                 <div class="lynks">
-                  <i class="fab fa-twitter"></i>
+                  <i class="icon-twitter2"></i>
                 </div>
                 <div class="lynks">
-                  <i class="fab fa-pinterest-p"></i>
+                  <i class="icon-pinterest2"></i>
                 </div>
               </div>
             </div>
@@ -448,8 +436,6 @@
     <section class="foot-line">
       <h5>zootopians@zoomper.com since 1899 pvt ltd</h5>
     </section>
-    <!-- icon font -->
-    <script src="https://code.iconify.design/2/2.0.3/iconify.min.js"></script>
 
     <!-- toggles -->
     <script>
@@ -540,63 +526,60 @@
       window.onscroll = function () {
         // home toggle
         if (document.documentElement.scrollTop < 700) {
+          atop.style.transition = "0.5s";
           atop.style.opacity = "0";
+          atop.style.transform = "rotateZ(-90deg) translateX(-80px)";
         } else {
           atop.style.opacity = "1";
+          atop.style.transition = "0.5s cubic-bezier(1, 1.57, 0, 0.85)";
+          atop.style.transform = "rotateZ(-90deg) translateX(0px)";
         }
+        // function call
+        let scrollT = function (scroller, scroller1) {
+          scroller.style.transform = "translateY(0px)";
+          scroller.style.opacity = "1";
+          scroller1.style.transform = "translateY(0px)";
+          scroller1.style.opacity = "1";
+        };
+        let scrollB = function (scroller, scroller1) {
+          scroller.style.transform = "translateY(-30px)";
+          scroller.style.opacity = "0";
+          scroller1.style.transform = "translateY(30px)";
+          scroller1.style.opacity = "0";
+        };
         // desktop size
         if (body.offsetWidth > 500) {
           if (
             document.documentElement.scrollTop > 250 &&
             document.documentElement.scrollTop < 800
           ) {
-            titletop.style.transform = "translateY(0px)";
-            titletop.style.opacity = "1";
-            parabot.style.transform = "translateY(0px)";
-            parabot.style.opacity = "1";
+            scrollT(titletop, parabot);
           } else {
-            titletop.style.transform = "translateY(-30px)";
-            titletop.style.opacity = "0";
-            parabot.style.transform = "translateY(30px)";
-            parabot.style.opacity = "0";
+            scrollB(titletop, parabot);
           }
           if (
             document.documentElement.scrollTop > 2200 &&
             document.documentElement.scrollTop < 2750
           ) {
-            titletopp.style.transform = "translateY(0px)";
-            titletopp.style.opacity = "1";
-            parabott.style.transform = "translateY(0px)";
-            parabott.style.opacity = "1";
+            scrollT(titletopp, parabott);
           } else {
-            titletopp.style.transform = "translateY(-30px)";
-            titletopp.style.opacity = "0";
-            parabott.style.transform = "translateY(30px)";
-            parabott.style.opacity = "0";
+            scrollB(titletopp, parabott);
           }
           if (
             document.documentElement.scrollTop > 3000 &&
             document.documentElement.scrollTop < 3550
           ) {
-            titletoppp.style.transform = "translateY(0px)";
-            titletoppp.style.opacity = "1";
-            parabottt.style.transform = "translateY(0px)";
-            parabottt.style.opacity = "1";
+            scrollT(titletoppp, parabottt);
           } else {
-            titletoppp.style.transform = "translateY(-30px)";
-            titletoppp.style.opacity = "0";
-            parabottt.style.transform = "translateY(30px)";
-            parabottt.style.opacity = "0";
+            scrollB(titletoppp, parabottt);
           }
           if (
             document.documentElement.scrollTop > 3900 &&
             document.documentElement.scrollTop < 4450
           ) {
-            titletopppp.style.transform = "translateY(0px)";
-            titletopppp.style.opacity = "1";
+            scrollT(titletopppp);
           } else {
-            titletopppp.style.transform = "translateY(-30px)";
-            titletopppp.style.opacity = "0";
+            scrollB(titletopppp);
           }
         } else {
           // mobile size
@@ -604,53 +587,33 @@
             document.documentElement.scrollTop > 400 &&
             document.documentElement.scrollTop < 1300
           ) {
-            titletop.style.transform = "translateY(0px)";
-            titletop.style.opacity = "1";
-            parabot.style.transform = "translateY(0px)";
-            parabot.style.opacity = "1";
+            scrollT(titletop, parabot);
           } else {
-            titletop.style.transform = "translateY(-30px)";
-            titletop.style.opacity = "0";
-            parabot.style.transform = "translateY(30px)";
-            parabot.style.opacity = "0";
+            scrollB(titletop, parabot);
           }
           if (
             document.documentElement.scrollTop > 3600 &&
             document.documentElement.scrollTop < 4300
           ) {
-            titletopp.style.transform = "translateY(0px)";
-            titletopp.style.opacity = "1";
-            parabott.style.transform = "translateY(0px)";
-            parabott.style.opacity = "1";
+            scrollT(titletopp, parabott);
           } else {
-            titletopp.style.transform = "translateY(-30px)";
-            titletopp.style.opacity = "0";
-            parabott.style.transform = "translateY(30px)";
-            parabott.style.opacity = "0";
+            scrollB(titletopp, parabott);
           }
           if (
             document.documentElement.scrollTop > 5000 &&
             document.documentElement.scrollTop < 5800
           ) {
-            titletoppp.style.transform = "translateY(0px)";
-            titletoppp.style.opacity = "1";
-            parabottt.style.transform = "translateY(0px)";
-            parabottt.style.opacity = "1";
+            scrollT(titletoppp, parabottt);
           } else {
-            titletoppp.style.transform = "translateY(-30px)";
-            titletoppp.style.opacity = "0";
-            parabottt.style.transform = "translateY(30px)";
-            parabottt.style.opacity = "0";
+            scrollB(titletoppp, parabottt);
           }
           if (
             document.documentElement.scrollTop > 6600 &&
             document.documentElement.scrollTop < 7200
           ) {
-            titletopppp.style.transform = "translateY(0px)";
-            titletopppp.style.opacity = "1";
+            scrollT(titletopppp);
           } else {
-            titletopppp.style.transform = "translateY(-30px)";
-            titletopppp.style.opacity = "0";
+            scrollB(titletopppp);
           }
         }
       };
@@ -683,16 +646,17 @@
       });
 
       // hover effects
-      showcontent.onmousemove = function (e) {
-        var y = e.pageY - showcontent.offsetTop;
-        var x = e.pageX - showcontent.offsetLeft;
+      // showcontent.onmousemove = function (e) {
+      //   var y = e.pageY - showcontent.offsetTop;
+      //   var x = e.pageX - showcontent.offsetLeft;
 
-        showcontent.style.setProperty("--y", y + "px");
-        showcontent.style.setProperty("--x", x + "px");
-      };
+      //   showcontent.style.setProperty("--y", y + "px");
+      //   showcontent.style.setProperty("--x", x + "px");
+      // };
     </script>
     <script src="./js/vanilla-tilt.min.js"></script>
     <script type="text/javascript">
+      // tilt animation
       VanillaTilt.init(document.querySelectorAll(".con-til"), {
         max: 25,
         speed: 400,

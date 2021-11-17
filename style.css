@@ -1,4 +1,31 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+@font-face {
+  font-family: "icomoon";
+  src: url("fonts/icomoon.eot?vcuvwj");
+  src: url("fonts/icomoon.eot?vcuvwj#iefix") format("embedded-opentype"),
+    url("fonts/icomoon.ttf?vcuvwj") format("truetype"),
+    url("fonts/icomoon.woff?vcuvwj") format("woff"),
+    url("fonts/icomoon.svg?vcuvwj#icomoon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"],
+[class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: "icomoon" !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
 * {
   font-family: "Poppins";
   box-sizing: border-box;
@@ -78,17 +105,16 @@ header .logo-con .logo {
   height: 65px;
   box-shadow: 3px 3px 7px var(--dark-clr), -3px -3px 7px var(--light-clr),
     inset 3px 3px 7px var(--light-clr), inset -3px -3px 7px var(--dark-clr);
-  position: relative;
-  transition: all 0.5s ease-in-out;
+  transition: all 0.25s ease-in-out;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-header .logo-con .logo svg {
-  font-size: 2.5em;
-  position: absolute;
-  fill: var(--text-clr);
+header .logo-con .logo a {
+  text-decoration: none;
+  font-size: 2.8em;
   color: var(--text-clr);
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
+  height: 1.35em;
 }
 header .logo-con .logo:hover {
   transform: scale(1.2);
@@ -185,19 +211,19 @@ header .links div.menu-bar.active .bar-bot {
   height: 4px;
 }
 .togler:after {
-  content: "\f186";
-  font-family: "FontAwesome";
+  content: "\e91c";
+  font-family: "icomoon";
 }
 .togler.active:after {
-  content: "\f185";
+  content: "\e901";
+  font-family: "icomoon";
   padding: 0.49em 0em;
-  font-family: "FontAwesome";
 }
 .topd {
   z-index: 10;
   opacity: 0;
   position: fixed;
-  bottom: 20px;
+  bottom: 30px;
   right: 20px;
   transition: opacity 0.2s cubic-bezier(1, 1.57, 0, 0.85);
 }
@@ -206,6 +232,9 @@ header .links div.menu-bar.active .bar-bot {
   color: var(--text-clr);
   text-decoration: none;
   text-shadow: 3px 3px 2px var(--dark-clr), -3px -3px 7px var(--light-clr);
+}
+.topa i {
+  margin-top: 10px;
 }
 .sec-one {
   position: relative;
@@ -297,7 +326,7 @@ header .links div.menu-bar.active .bar-bot {
   transform: translateX(300px);
   opacity: 0;
   -webkit-box-reflect: below 0
-    linear-gradient(to bottom, transparent 80%, black);
+    linear-gradient(to bottom, transparent 75%, rgba(0, 0, 0, 0.8));
 }
 .sec-one .sec-con .right-con .img-con:hover {
   transform: scale(1.1);
