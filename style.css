@@ -784,6 +784,7 @@ section.bar-anim .jump3 {
   position: relative;
   color: var(--text-clr);
   padding-bottom: 1em;
+  overflow: hidden;
 }
 .sec-three .sec-con .sec-con-2 .con-bar .con-title h2 {
   text-align: center;
