@@ -227,6 +227,11 @@ header .links div.menu-bar.active .bar-bot {
   bottom: 30px;
   right: 20px;
   transition: all 0.8s cubic-bezier(1, 1.57, 0, 0.85);
+  transform: rotateZ(-90deg) translateX(-100px);
+}
+.topd.active {
+  transform: rotateZ(-90deg) translateX(0px);
+  opacity: 1;
 }
 .topa {
   font-size: 3em;
@@ -1558,14 +1563,11 @@ section.bar-anim .jump3 {
   box-shadow: inset 3px 3px 7px var(--dark-clr),
     inset -3px -3px 7px var(--light-clr);
 }
-@keyframes alli {
+@keyframes ani {
   0% {
-    transform: rotateZ(-90deg) translateX(-80px);
-  }
-  1% {
     transform: rotateZ(-90deg) translateX(0px);
   }
   100% {
-    transform: rotateZ(-90deg) translateX(80px);
+    transform: rotateZ(-90deg) translateX(1000px);
   }
 }

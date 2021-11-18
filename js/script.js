@@ -80,14 +80,20 @@ let titletoppp = document.querySelector(".title-top2");
 let parabottt = document.querySelector(".para-bottom2");
 let titletopppp = document.querySelector(".title-top3");
 let atop = document.querySelector(".topd");
+atop.onclick = function () {
+  atop.style.animation = "ani 1s linear";
+};
 window.onscroll = function () {
   // home toggle
   if (document.documentElement.scrollTop < 700) {
-    atop.style.opacity = "0";
-    atop.style.transform = "rotateZ(-90deg) translateX(-80px)";
+    // atop.style.opacity = "0";
+    // atop.style.transform = "rotateZ(-90deg) translateX(-80px)";
+    atop.classList.remove("active");
+    atop.style.animation = "none";
   } else {
-    atop.style.opacity = "1";
-    atop.style.transform = "rotateZ(-90deg) translateX(0px)";
+    atop.classList.add("active");
+    // atop.style.opacity = "1";
+    // atop.style.transform = "rotateZ(-90deg) translateX(0px)";
   }
   // function call
   let scrollT = function (scroller, scroller1) {
