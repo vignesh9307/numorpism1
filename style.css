@@ -64,6 +64,10 @@
 ::-webkit-scrollbar-thumb:hover {
   background-color: var(--dark-clr);
 }
+::selection {
+  background-color: var(--text-clr);
+  color: var(--back-clr);
+}
 body.light {
   --dark-clr: rgba(0, 0, 0, 0.15);
   --light-clr: rgba(95, 95, 95, 0.9);
@@ -257,6 +261,7 @@ header .links div.menu-bar.active .bar-bot {
   -webkit-background-clip: text;
   color: transparent;
   margin-top: 10px;
+  user-select: none;
 }
 .sec-one {
   position: relative;
@@ -347,6 +352,8 @@ header .links div.menu-bar.active .bar-bot {
   transition: all 0.5s ease-in-out;
   transform: translateX(300px);
   opacity: 0;
+}
+.sec-one .sec-con .right-con .img-con.active {
   -webkit-box-reflect: below 0
     linear-gradient(
       to bottom,
