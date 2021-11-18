@@ -190,7 +190,7 @@ window.addEventListener("scroll", function () {
   }
 
   if (body.offsetWidth < 500) {
-    img.classList.add("active");
+    img.classList.remove("active");
     // small screen
     if (300 < scrollV && 1000 > scrollV) {
       img.style.transform = "translateX(" + (scrollV * 0.3 - 90) + "px)";
@@ -199,7 +199,7 @@ window.addEventListener("scroll", function () {
       img.style.transform = "translateX(0px)";
     }
   } else {
-    img.classList.remove("active");
+    img.classList.add("active");
     if (scrollV < 600) {
       img.style.transform = "translateX(" + scrollV * 0.6 + "px)";
       img.style.transition = "all 0.5s 0s";
