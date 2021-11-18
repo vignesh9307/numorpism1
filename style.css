@@ -238,10 +238,14 @@ header .links div.menu-bar.active .bar-bot {
   text-decoration: none;
   text-shadow: 3px 3px 2px var(--dark-clr);
 }
-.topa i {
+.topd.active:hover .topa div {
+  animation: jurk 0.2s infinite;
+}
+.topa div i {
   color: var(--text-clr);
   background-image: linear-gradient(
     to top,
+    var(--text-clr),
     silver,
     var(--text-clr),
     silver,
@@ -1569,5 +1573,23 @@ section.bar-anim .jump3 {
   }
   100% {
     transform: rotateZ(-90deg) translateX(1000px);
+  }
+}
+@keyframes jurk {
+  0%,
+  30%,
+  50%,
+  70%,
+  90% {
+    transform: rotateZ(0deg);
+  }
+  20%,
+  60%,
+  100% {
+    transform: rotateZ(-2deg);
+  }
+  40%,
+  80% {
+    transform: rotateZ(2deg);
   }
 }

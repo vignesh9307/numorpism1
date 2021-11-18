@@ -81,7 +81,7 @@ let parabottt = document.querySelector(".para-bottom2");
 let titletopppp = document.querySelector(".title-top3");
 let atop = document.querySelector(".topd");
 atop.onclick = function () {
-  atop.style.animation = "ani 1s linear";
+  atop.style.animation = "ani 1s ease";
 };
 window.onscroll = function () {
   // home toggle
@@ -193,14 +193,14 @@ window.addEventListener("scroll", function () {
     // small screen
     if (300 < scrollV && 1000 > scrollV) {
       img.style.transform = "translateX(" + (scrollV * 0.3 - 90) + "px)";
-      img.style.transition = "0.2s";
+      img.style.transition = "all 0.2s";
     } else {
       img.style.transform = "translateX(0px)";
     }
   } else {
     if (scrollV < 600) {
       img.style.transform = "translateX(" + scrollV * 0.6 + "px)";
-      img.style.transition = "0.5s 0s";
+      img.style.transition = "all 0.5s 0s";
     }
   }
 });
