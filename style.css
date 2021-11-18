@@ -347,13 +347,13 @@ header .links div.menu-bar.active .bar-bot {
   transition: all 0.5s ease-in-out;
   transform: translateX(300px);
   opacity: 0;
-  /* -webkit-box-reflect: below 0
+  -webkit-box-reflect: below 0
     linear-gradient(
       to bottom,
       transparent 75%,
       rgba(0, 0, 0, 0.2),
       rgba(0, 0, 0, 0.8)
-    ); */
+    );
 }
 .sec-one .sec-con .right-con .img-con:hover {
   transform: scale(1.1);
