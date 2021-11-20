@@ -194,7 +194,7 @@ window.addEventListener("scroll", function () {
     // small screen
     if (300 < scrollV && 1000 > scrollV) {
       img.style.transform = "translateX(" + (scrollV * 0.3 - 90) + "px)";
-      img.style.transition = "all 0.2s";
+      img.style.transition = "all 0.5s";
     } else {
       img.style.transform = "translateX(0px)";
     }
