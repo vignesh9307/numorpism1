@@ -341,7 +341,7 @@ header .links div.menu-bar.active .bar-bot {
 .sec-one .sec-con .right-con .img-con {
   background-color: var(--back-clr);
   background-blend-mode: luminosity;
-  background-image: url("https://inspgr.id/app/uploads/2020/11/illustration-christian-liquid-01-805x1006.jpg");
+  background-image: url("./images/avatar-or.webp");
   background-position: center;
   background-size: cover;
   width: 300px;
@@ -678,7 +678,7 @@ section.bar-anim .jump3 {
   justify-content: center;
 }
 .sec-con-1 .tab1 .img-con {
-  background-image: url("https://inspgr.id/app/uploads/2020/11/illustration-christian-liquid-05-805x1006.jpg");
+  background-image: url("./images/avatar-gr.webp");
   width: 40%;
   height: 100%;
   background-position: center;
@@ -691,7 +691,7 @@ section.bar-anim .jump3 {
 }
 
 .sec-con-1 .tab2 .img-con {
-  background-image: url("https://inspgr.id/app/uploads/2020/11/illustration-christian-liquid-04-805x1006.jpg");
+  background-image: url("./images/avatar-pur.webp");
   width: 40%;
   height: 100%;
   background-position: center;
@@ -703,7 +703,7 @@ section.bar-anim .jump3 {
   border-radius: 0px 30px 30px 0px;
 }
 .sec-con-1 .tab3 .img-con {
-  background-image: url("https://inspgr.id/app/uploads/2020/11/illustration-christian-liquid-07-805x1006.jpg");
+  background-image: url("./images/avatar-san.webp");
   width: 40%;
   height: 100%;
   background-position: center;
