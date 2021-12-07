@@ -346,33 +346,35 @@
           <div class="sec-form">
             <div class="form-con shadow-in">
               <div class="form-title"><h2>Send a message</h2></div>
-              <div class="form-inputs">
-                <div class="name-sec">
-                  <div class="name-1 col">
-                    <label for="fname"> First Name </label>
-                    <input type="text" id="fname" class="fname1 shadow-out" />
+              <form action="./mail.php" method="post">
+                <div class="form-inputs">
+                  <div class="name-sec">
+                    <div class="name-1 col">
+                      <label for="fname"> First Name </label>
+                      <input type="text" id="fname" class="fname1 shadow-out" />
+                    </div>
+                    <div class="name-2 col">
+                      <label for="lname"> Last Name </label>
+                      <input type="text" id="lname" class="fname1 shadow-out" />
+                    </div>
                   </div>
-                  <div class="name-2 col">
-                    <label for="lname"> Last Name </label>
-                    <input type="text" id="lname" class="fname1 shadow-out" />
+                  <div class="mail-sec mrg-t col">
+                    <label for="mail"> Email ID </label>
+                    <input type="email" id="mail" class="fname1 shadow-out" />
+                  </div>
+                  <div class="desc-sec mrg-t col">
+                    <label for="desc"> Description </label>
+                    <textarea
+                      name="desc"
+                      id="desc"
+                      class="fname1 shadow-out"
+                    ></textarea>
                   </div>
                 </div>
-                <div class="mail-sec mrg-t col">
-                  <label for="mail"> Email ID </label>
-                  <input type="email" id="mail" class="fname1 shadow-out" />
+                <div class="sub-btn">
+                  <button type="submit" class="shadow-out">Submit</button>
                 </div>
-                <div class="desc-sec mrg-t col">
-                  <label for="desc"> Description </label>
-                  <textarea
-                    name="desc"
-                    id="desc"
-                    class="fname1 shadow-out"
-                  ></textarea>
-                </div>
-              </div>
-              <div class="sub-btn">
-                <button type="submit" class="shadow-out">Submit</button>
-              </div>
+              </form>
             </div>
           </div>
         </div>
